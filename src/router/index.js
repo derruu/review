@@ -20,6 +20,16 @@ const router = createRouter({
       name: "restos-show",
       component: () => import("../views/RestoDetailView.vue"),
     },
+    {
+      path: "/profile",
+      name: "/profile",
+      component: () => import("../views/ProfileView.vue"),
+    },
+    {
+      path: "/create",
+      name: "/create",
+      component: () => import("../views/CreateView.vue"),
+    },
   ]
 })
 

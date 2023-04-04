@@ -18,16 +18,29 @@ const fetchRestos = async () => {
   isLoading.value = false;
 };
 onMounted(() => fetchRestos());
+
 const excerpt = (text, maxLenght = 10, indicator = "...") => {
   let textCopy = text;
+
   if (textCopy.length > maxLenght) {
-    textCopy = textCopy.substring(0, maxLenght) + indicator;
+      textCopy = textCopy.substring(0, maxLenght) + indicator;
   }
   return textCopy;
 };
 </script>
 
 <template>
+  <div class="min-h-screen mx-auto ">
+        <div class="bg-amber-400">
+            <nav class="flex justify-end shadow-lg">
+                <p class="mr-auto px-10 py-5 text-3xl font-Righteous select-none">RESTO|CUYY</p>
+                <ul class="flex px-20 py-5 gap-10 font-medium">
+                    <RouterLink to="" class="hover:underline select-none font-Poppins  hover:text-white duration-500">Home</RouterLink>
+                    <RouterLink to="/create" class="hover:underline select-none font-Poppins  hover:text-white duration-500">Add Resto</RouterLink>
+                    <RouterLink to="/profile" class="hover:underline select-none font-Poppins  hover:text-white duration-500">Account</RouterLink>
+                </ul>
+            </nav>
+        </div>
 <BaseContainer>
     <div class="grid grid-cols-12 gap-4">
       <div v-for="resto in restos" :key="resto.id" class="col-span-4">
@@ -38,4 +51,5 @@ const excerpt = (text, maxLenght = 10, indicator = "...") => {
       </div>
     </div>
   </BaseContainer>
+</div>
 </template>

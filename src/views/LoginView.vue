@@ -1,6 +1,6 @@
 <script setup>
-import { reactive, ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { reactive, ref } from "vue";
+import { useRoute, useRouter } from "vue-router";
 import { useAuthRepository } from "@/composables";
 
  const repository = useAuthRepository()
@@ -57,7 +57,8 @@ import { useAuthRepository } from "@/composables";
       placeholder="password" 
       class="border p-2 w-full bg-gray-50 outline-none focus:ring-4 focus:ring-blue-300 rounded" >
     </div>
-    <button type="submit" class="bg-blue-600 text-white p-2 w-full block hover:bg-blue-800 rounded transision-colour duration-200">MASUK</button>
+    <button type="submit" class="bg-blue-600 
+    text-white p-2 w-full block hover:bg-blue-800 rounded transision-colour duration-200">MASUK</button>
       </form>
     </section>
 
