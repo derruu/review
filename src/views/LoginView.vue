@@ -59,6 +59,7 @@ import { useAuthRepository } from "@/composables";
     </div>
     <button type="submit" class="bg-blue-600 
     text-white p-2 w-full block hover:bg-blue-800 rounded transision-colour duration-200">MASUK</button>
+    <p class="text-center mt-5 font-semibold">Create An Account ? <router-link class="text-blue-600 hover:text-blue-700 hover:text-xl duration-300" to="register" >Register</router-link></p>
       </form>
     </section>
 
