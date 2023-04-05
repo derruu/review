@@ -4,7 +4,7 @@ import {RouterView } from "vue-router";
 </script>
 
 <template>
-<div class="box-border antialiased bg-amber-200">
+<div class="box-border antialiased bg-white">
 
   <RouterView />
 </div>

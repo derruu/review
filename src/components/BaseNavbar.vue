@@ -28,14 +28,14 @@
 
 <template>    
 <div class="mx-auto ">
-        <div class="bg-amber-400">
+        <div class="bg-[#4fc4cf]">
             <nav class="flex justify-end shadow-lg">
                 <p class="mr-auto px-10 py-5 text-3xl font-Righteous select-none">RESTO|CUYY</p>
                 <ul class="flex px-20 py-5 gap-10 font-medium">
-                    <RouterLink to="" class="hover:underline select-none font-Poppins  hover:text-white duration-500">Home</RouterLink>
-                    <RouterLink to="/create" class="hover:underline select-none font-Poppins  hover:text-white duration-500">Add Resto</RouterLink>
-                    <RouterLink to="/profile" class="hover:underline select-none font-Poppins  hover:text-white duration-500">Account</RouterLink>
-                    <button @click="logout" class="hover:underline select-none font-Poppins  hover:text-white duration-500 pb-3">logout
+                    <RouterLink to="/restos" class="hover:underline select-none font-Poppins  hover:text-[#fbdd74] duration-500 text-[#272343]">Home</RouterLink>
+                    <RouterLink to="/create" class="hover:underline select-none font-Poppins  hover:text-[#fbdd74] duration-500 text-[#272343]">Add Resto</RouterLink>
+                    <RouterLink to="/profile" class="hover:underline select-none font-Poppins  hover:text-[#fbdd74] duration-500 text-[#272343]">Account</RouterLink>
+                    <button @click="logout" class="hover:underline select-none font-Poppins  hover:text-[#fbdd74] duration-500 pb-3 text-[#272343]">logout
                     </button>
                 </ul>
             </nav>

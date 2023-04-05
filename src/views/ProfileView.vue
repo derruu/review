@@ -4,7 +4,7 @@ import BaseNavbar from '../components/BaseNavbar.vue';
 <template>
     <BaseNavbar />
 
-        <div class="bg-amber-200 min-h-screen flex flex-col items-center p-2">
+        <div class="bg-white min-h-screen flex flex-col items-center p-2">
             <div class="flex flex-col items-center">
                 <div class="w-[120px] relative mt-20 select-none">
                     <div class="w-[130px] relative mt-6">

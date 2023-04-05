@@ -43,12 +43,12 @@ onMounted(() => fetchReviews());
   <BaseContainer>
     <RouterLink
       :to="{ name: 'restos' }"
-      class="inline-block p-2 bg-blue-600 text-white rounded hover:bg-blue-800"
+      class="inline-block p-2 bg-[#272343] text-white rounded hover:bg-black"
     >
 
     Back
     </RouterLink>
-    <BaseCard class="mt-4 bg-amber-400 text-black">
+    <BaseCard class="mt-4 bg-[#ffd803] text-black">
       <template #title>Resto</template>
     </BaseCard>
 
@@ -57,7 +57,7 @@ onMounted(() => fetchReviews());
       {{ resto.description }}
     </BaseCard>
 
-    <BaseCard class="mt-4 bg-amber-400 text-black">
+    <BaseCard class="mt-4 bg-[#ffd803] text-black">
       <template #title>Reviews</template>
     </BaseCard>
 
