@@ -31,10 +31,9 @@ const onSubmit = () => {
 </script>
 <template>
 
-
+<BaseNavbar />
 <BaseContainer>
-    <BaseNavbar />
-        <section class="col-span-full row-span-3 mx-10">
+        <section>
             <div class="min-h-screen p-44 pt-12">
                 <div class=" bg-white h-full shadow-xl">
                     <p class="text-center pt-16 font-bold text-3xl border-b-2 mx-20">Add New Resto</p>
@@ -65,8 +64,7 @@ const onSubmit = () => {
                                 v-model="resto.description">
 
                             </div>
-                            <button type="submit" class="bg-blue-600 text-white p-2 ml-44 inline-block w-96
-                            hover:bg-blue-800 rounded transition-colors duration-200">TAMBAHKAN</button>
+                            <button type="submit" class="inline-block p-1 px-3 border-2 border-black rounded shadow-[1.9px_3px_0px_2px_rgba(39,35,67,1)] hover:scale-[1.05] active:scale-1 duration-200">TAMBAHKAN</button>
                         </div>
                     </form>
                 </div>

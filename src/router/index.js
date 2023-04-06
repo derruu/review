@@ -35,6 +35,11 @@ const router = createRouter({
       name: "/register",
       component: () => import("../views/RegisterView.vue"),
     },
+    {
+      path: "/update/:id",
+      name: 'update',
+      component: () => import("../views/UpdateView.vue"),
+    },
   ]
 })
 

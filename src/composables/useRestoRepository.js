@@ -48,7 +48,8 @@ export const useRestoRepository = () => {
    * @param {*} id The id of the record stored in the database.
    * @returns array
    */
-  const reviews = (id) => http.get(`/api/restos/${id}/reviews`);
+ 
+  const reviews = (id) => http.get(`/api/restos/${id}/reviews`);  
 
   return {
     index,
@@ -56,5 +57,6 @@ export const useRestoRepository = () => {
     store,
     update,
     destroy,
+    reviews
   };
 };

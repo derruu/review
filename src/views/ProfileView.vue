@@ -46,12 +46,13 @@ onMounted(() => {
                 </div>
                 <div class="border-b-4 pt-5 w-full border-black mx-[150px]"></div>
                 <div class="p-8 space-x-10">
-                    <router-link to="">
-                        <button class="p-4 font-Poppins bg-[#bae8e8] rounded-xl">See resto</button>
-                    </router-link>
-                    <router-link to="">
-                        <button class="p-4 font-Poppins bg-[#bae8e8] rounded-xl">edit resto</button>
-                    </router-link>
+                    <RouterLink
+                   :to="{ name: 'restos' }"
+                     class="inline-block p-1 px-3 border-2 border-black rounded shadow-[1.9px_3px_0px_2px_rgba(39,35,67,1)] hover:scale-[1.05] active:scale-1 duration-200 "
+                        >
+                     see resto
+                    </RouterLink>
+               
 
                 </div>
             </div>
