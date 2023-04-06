@@ -52,9 +52,21 @@ onMounted(() => fetchReviews());
       <template #title>Resto</template>
     </BaseCard>
 
-    <BaseCard class="mt-4">
-      <template #title>{{ resto.name }}</template>
-      {{ resto.description }}
+    <p class="text-2xl mt-3 font-bold w-[110px]">About this resto'</p>
+    <hr class="h-[10px] w-[50px] my-4 bg-[#dde5b6] border-0 dark:bg-gray-700" />
+    <BaseCard class="mt-4 ">
+        <div v-if="resto.description" class="text-black">
+            {{ resto.description }}
+        </div>
+        <div v-else class="text-black">No Description Yet</div>
+    </BaseCard>
+
+    <p class="text-2xl mt-3 font-bold ]">Located at'</p>
+    <hr class="h-[10px] w-[50px] my-4 bg-[#dde5b6] border-0 dark:bg-gray-700" />
+    <BaseCard class="mt-4 ">
+        <p class="text-black">
+            {{ resto.address }}
+        </p>
     </BaseCard>
 
     <BaseCard class="mt-4 bg-[#ffd803] text-black">
